@@ -6,8 +6,7 @@ const Kitchen = (props) => {
     <>
       <div className="room kitchen">
         Kitchen 
-        <Oven />
-        <Sink />
+        <Oven /><Sink />
 
       </div>
     </>

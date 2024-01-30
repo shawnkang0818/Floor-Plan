@@ -6,14 +6,20 @@ import './App.css'
 
 function App () {
   return ( 
-    <div className="floor-plan" >
-      <Bedroom numBed={1} />  
-      <Kitchen/> 
-      <Bedroom numBed={2} /> 
-      <Bath size={'Full'} />  
-      <LivingRoom />
-      <Bath size={'Half'} />  
-      <Bedroom numBed={3} />
+    <div className='FloorPlan'>
+      <span className='upper'>
+        <span className='upper-Left'>
+          <Bedroom bedroomNum = {1} />      
+          <Bath size="Full"/>
+        </span>
+        <LivingRoom />
+        <Kitchen kitchenStuffs = {["Oven", "Sink"]}/>
+      </span>
+      <span className='bottom'>
+        <Bedroom bedroomNum = {2} />
+        <Bath size="Half"/>
+        <Bedroom bedroomNum = {3} />
+      </span>
     </div>
   )
 }

@@ -3,72 +3,99 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
-  margin: 0;
 }
 
-.floor-plan {
-  display: grid;
-  grid-template-areas:
-    "bedroom-1 living-room kitchen"
-    "Full-bath living-room kitchen"
-    "bedroom-2 Half-bath bedroom-3";
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr; 
-  height: 40rcap;
-  margin: 0;
+div{
+  /* border: 1px solid grey;
+  margin: 5px;
+  padding: 5px;  */
 }
 
-.room {
-  border: none solid grey;
-  padding: 50px;
-  text-align: center;
-  font-weight: bold;
+.FloorPlan{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: auto;
 }
 
-.bedroom {
+.upper{
+  display: flex;
+  justify-content: center;
+}
+
+.upper-left{
+  display: flex;
+  flex-direction: column;
+  margin: auto
+}
+
+.bottom{
+  display: flex;
+}
+
+
+.bedroom{
   background-color: steelblue;
-  color: white;
-}
-
-.living-room {
-  background-color: tan;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  grid-area: living-room;
+  width: 200px;
+  height: 200px;
 }
 
-.kitchen {
+.living-room{
+  background-color: tan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+}
+
+.kitchen{
   background-color: goldenrod;
-  text-align: center;
-  grid-area: kitchen;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  width: 100px;
 }
 
-.bath {
+.appliances{
+  display: flex;
+  height: 50px;
+  top: 0;
+}
+
+#Full-bath{
+  width: 200px;
+  height: 100px;
+}
+
+#Half-bath{
+  width: 100px;
+  height: 200px;
+}
+
+.bath{
   background-color: olivedrab;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.oven {
+.oven{
   background-color: firebrick;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
 }
 
-.sink {
-  background-color: rgba(104, 39, 39, 0.469);
-  color: white;
+.sink{
+  background-color: chocolate;
+  display: flex;
+  justify-content: center;
+  align-items: center;  
+  width: 50px;
 }
-
-
-.Full-bath { 
-  grid-area: Full-bath; 
-  background-color: olivedrab; 
-  color: white; 
-}
-
-.Half-bath {
-  grid-area: Half-bath; 
-  background-color: olivedrab; 
-  color: white; 
-  }
