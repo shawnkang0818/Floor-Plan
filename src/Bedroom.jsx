@@ -1,7 +1,7 @@
 const Bedroom = (props) => {
   return (
     <>
-      <div className='bedroom' id={`bed-${props.bedNum}`}>Bedroom {props.numBed} </div>
+      <div className={`room bedroom bedroom-${props.bedNum}`} id={`bedroom-${props.bedNum}`}>Bedroom {props.numBed} </div>
     </>
   )
 }

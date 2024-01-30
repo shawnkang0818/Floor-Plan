@@ -6,7 +6,7 @@ import './App.css'
 
 function App () {
   return ( 
-    <>
+    <div className="floor-plan" >
       <Bedroom numBed={1} />  
       <Kitchen/> 
       <Bedroom numBed={2} /> 
@@ -14,7 +14,7 @@ function App () {
       <LivingRoom />
       <Bath size={'Half'} />  
       <Bedroom numBed={3} />
-    </>
+    </div>
   )
 }
 

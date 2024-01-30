@@ -3,10 +3,72 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  margin: 0;
 }
 
-div {
-  border: 1px solid grey;
-  margin: 5px;
-  padding: 5px;
+.floor-plan {
+  display: grid;
+  grid-template-areas:
+    "bedroom-1 living-room kitchen"
+    "Full-bath living-room kitchen"
+    "bedroom-2 Half-bath bedroom-3";
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr; 
+  height: 40rcap;
+  margin: 0;
 }
+
+.room {
+  border: none solid grey;
+  padding: 50px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bedroom {
+  background-color: steelblue;
+  color: white;
+}
+
+.living-room {
+  background-color: tan;
+  align-items: center;
+  text-align: center;
+  grid-area: living-room;
+}
+
+.kitchen {
+  background-color: goldenrod;
+  text-align: center;
+  grid-area: kitchen;
+  
+}
+
+.bath {
+  background-color: olivedrab;
+  color: white;
+}
+
+.oven {
+  background-color: firebrick;
+  color: white;
+}
+
+.sink {
+  background-color: rgba(104, 39, 39, 0.469);
+  color: white;
+}
+
+
+.Full-bath { 
+  grid-area: Full-bath; 
+  background-color: olivedrab; 
+  color: white; 
+}
+
+.Half-bath {
+  grid-area: Half-bath; 
+  background-color: olivedrab; 
+  color: white; 
+  }
