@@ -1,10 +1,10 @@
 const Sink = () => {
   return ( 
     <>
-      <div className="sink" >Sink</div>
+      <div className="sink oven-skin " >Sink</div>
     </>
 
-   );
+  );
 }
- 
+
 export default Sink;

@@ -5,8 +5,8 @@ const Kitchen = (props) => {
   return (
     <>
       <div className="room kitchen">
-        Kitchen 
-        <Oven /><Sink />
+        <div className='oven-skin'><Oven /><Sink /></div>
+        <div className="kitchen-text" >Kitchen</div> 
 
       </div>
     </>

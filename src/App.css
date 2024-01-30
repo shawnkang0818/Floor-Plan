@@ -5,11 +5,7 @@ html, body {
   align-items: center;
 }
 
-div{
-  /* border: 1px solid grey;
-  margin: 5px;
-  padding: 5px;  */
-}
+
 
 .FloorPlan{
   display: flex;
@@ -57,7 +53,7 @@ div{
   flex-direction: column;
   align-items: center;
   align-content: center;
-  justify-content: center;
+  /* justify-content: center; */
   width: 100px;
 }
 
@@ -82,20 +78,25 @@ div{
   display: flex;
   justify-content: center;
   align-items: center;
+  
+}
+.oven-skin{
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
 }
 
 .oven{
   background-color: firebrick;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 50px;
 }
 
 .sink{
   background-color: chocolate;
-  display: flex;
-  justify-content: center;
-  align-items: center;  
   width: 50px;
+}
+.kitchen .kitchen-text {
+  margin-top: 120%;
 }
